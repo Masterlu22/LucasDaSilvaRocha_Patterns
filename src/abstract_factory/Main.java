@@ -4,11 +4,13 @@ public class Main {
     static void main() {
         System.out.println("=== Tema Claro ===");
         UIComponentFactory lightTheme = new LightThemeFactory();
-        Application.criar(lightTheme);
+        Application app = new Application();
+        app.criar(lightTheme);
 
         System.out.println("=== Tema Escuro ===");
         UIComponentFactory darkTheme = new DarkThemeFactory();
-        Application.criar(darkTheme);
+        Application app2 = new Application();
+        app2.criar(darkTheme);
 
     }
 }
